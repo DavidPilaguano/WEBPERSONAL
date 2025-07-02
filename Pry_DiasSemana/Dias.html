@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiasSemana</title>
+    <link rel="stylesheet" href="public/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    
+<div class="container py-5">
+    <div class="card mx-auto" style="max-width: 400px;">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Seleccione un Día</h4>
+            <select name="dia_semana" id="dia_semana" class="form-select form-select-lg" onchange="seleccionarDia(this)">
+                <option value="" selected>SELECCION</option>
+                <option value="LUNES">LUNES</option>
+                <option value="MARTES">MARTES</option>
+                <option value="MIERCOLES">MIERCOLES</option>
+                <option value="JUEVES">JUEVES</option>
+                <option value="VIERNES">VIERNES</option>
+                <option value="SABADO">SABADO</option>
+                <option value="DOMINGO">DOMINGO</option>
+            </select>
+            <div id="resultado" class="fw-bold text-info text-center"></div>
+            <div id="Lab" class="text text-info text-center"></div>
+        </div>
+    </div>
+</div>
+
+<script src="public/js/diasSemana.js"></script>
+</body>
+</html>

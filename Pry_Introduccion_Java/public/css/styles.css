@@ -1,0 +1,27 @@
+.contenedor {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr; 
+}
+
+/* Tablet: 2 columnas */
+@media (min-width: 600px) and (max-width: 991px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Escritorio: 4 columnas */
+@media (min-width: 992px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.caja {
+  background-color: #6495ED;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}

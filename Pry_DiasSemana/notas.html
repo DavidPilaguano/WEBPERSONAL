@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTA DEL ESTUDIANTE</title>
+    <link rel="stylesheet" href="public/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    
+<div class="container py-5">
+    <div class="card mx-auto" style="max-width: 400px;">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4"> CALCULAR NOTA DEL ESTUDIANTE</h4>
+            <div class="mb-3 mx-5">
+                <label for="" class="form-label">INGRESE LA NOTA</label>
+                <input type="text" name="txt_nota" id="txt_nota" class="form-control form-control-sm" aria-describedby="helpId" placeholder="0.00" oninput="calcularNota(this)">
+            </div>
+            <div id="resultado" class=""></div>
+        <!-- <div id="Lab" class="text text-info text-center"></div> -->
+        </div>
+    </div>
+</div>
+
+<script src="public/js/Notas.js"></script>
+</body>
+</html>

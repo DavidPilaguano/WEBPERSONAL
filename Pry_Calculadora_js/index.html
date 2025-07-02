@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="public/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="containerfluid">
+        <div class="card text-center" style="width: 30rem; margin: 20px auto;">
+            <div class="card-header"
+                style="background-color: rgb(254, 116, 116); text-indent: 0.5em; font-size: 1 em; color: rgb(0, 0, 0);">
+                CASIO xf85la CW
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" style="color: black;"></h5>
+                <p class="card-text">
+                <div class="form-floating mb-3">
+
+                    <input type="text" class="form-control" id="ca_texto" placeholder="0" readonly>
+                    <label for="ca_texto"></label>
+                </div>
+                </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><button type="button" data-valor="divi" onclick="enviarValor(this)"
+                                    class="btn">/</button></th>
+                            <th><button type="button" data-valor="multi" onclick="enviarValor(this)"
+                                    class="btn">*</button></th>
+                            <th><button type="button" data-valor="0" onclick="enviarValor(this)" class="btn">0</button>
+                            </th>
+                            <th style="background-color: rgb(252, 223, 96);"><button type="button" data-valor="back"
+                                    onclick="enviarValor(this)" class="btn"><-< /button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><button type="button" data-valor="7" onclick="enviarValor(this)" class="btn">7</button>
+                            </th>
+                            <td><button type="button" data-valor="8" onclick="enviarValor(this)" class="btn">8</button>
+                            </td>
+                            <td><button type="button" data-valor="9" onclick="enviarValor(this)" class="btn">9</button>
+                            </td>
+                            <td style="background-color: rgb(96, 179, 252);">
+                                <button type="button" data-valor="menos" onclick="enviarValor(this)"
+                                    class="btn">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><button type="button" data-valor="4" onclick="enviarValor(this)" class="btn">4</button>
+                            </th>
+                            <td><button type="button" data-valor="5" onclick="enviarValor(this)" class="btn">5</button>
+                            </td>
+                            <td><button type="button" data-valor="6" onclick="enviarValor(this)" class="btn">6</button>
+                            </td>
+                            <td style="background-color: aquamarine;"><button type="button" data-valor="suma"
+                                    onclick="enviarValor(this)" class="btn">+</button></td>
+                        </tr>
+                        <tr>
+                            <th><button type="button" data-valor="1" onclick="enviarValor(this)" class="btn">1</button>
+                            </th>
+                            <td><button type="button" data-valor="2" onclick="enviarValor(this)" class="btn">2</button>
+                            </td>
+                            <td><button type="button" data-valor="3" onclick="enviarValor(this)" class="btn">3</button>
+                            </td>
+                            <td style="background-color: aqua;"><button type="button" data-valor="igual"
+                                    onclick="enviarValor(this)" class="btn">=</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- estoy haciendo el llamado a mi archivo calculadora.js que se encuentra en el folder ddisk -->
+    <script src="Public/dist/js/calculadora.js"></script>
+    <script src="public/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<!---->

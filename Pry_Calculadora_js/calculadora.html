@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="public/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container pt-5">
+        <h1 class="text-center text-primary">Calculadora básica con JS</h1>
+
+        <div class="card my-5 mx-auto p-4" style="max-width: 400px;">
+            <input id="txt_pantalla" class="form-control text-end fs-4 mb-4" type="text" disabled value="0">
+
+            <div class="row g-2">
+                <div class="col-3 col-6-sm"><button class="btn btn-dark w-100" onclick="agregarNumero(9)">9</button></div>
+                <div class="col-3 col-6-sm"><button class="btn btn-dark w-100" onclick="agregarNumero(8)">8</button></div>
+                <div class="col-3 col-6-sm"><button class="btn btn-dark w-100" onclick="agregarNumero(7)">7</button></div>
+                <div class="col-3 col-6-sm"><button class="btn btn-warning w-100" onclick="seleccionarOp('+')">+</button></div>
+
+                <div class="col-3 col-6-sm"" ><button class="btn btn-dark w-100" onclick="agregarNumero(6)">6</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-dark w-100" onclick="agregarNumero(5)">5</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-dark w-100" onclick="agregarNumero(4)">4</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-warning w-100" onclick="seleccionarOp('-')">-</button></div>
+
+                <div class="col-3 col-6-sm""><button class="btn btn-dark w-100" onclick="agregarNumero(3)">3</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-dark w-100" onclick="agregarNumero(2)">2</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-dark w-100" onclick="agregarNumero(1)">1</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-warning w-100" onclick="seleccionarOp('*')">*</button></div>
+
+                <div class="col-3 col-6-sm""><button class="btn btn-danger w-100" onclick="limpiarPantalla()">C</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-dark w-100" onclick="agregarNumero(0)">0</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-success w-100" onclick="calcularResultado()">=</button></div>
+                <div class="col-3 col-6-sm""><button class="btn btn-warning w-100" onclick="seleccionarOp('/')">/</button></div>
+
+                <div class="col-12"><button class="btn btn-secondary w-100" onclick="seleccionarOp('.')">.</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="public/js/funciones.js"></script>
+</body>
+</html>
